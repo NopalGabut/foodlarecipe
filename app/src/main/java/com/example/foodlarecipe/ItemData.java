@@ -3,7 +3,7 @@ package com.example.foodlarecipe;
 public class ItemData {
     public String itemName;
     public String itemAsl;
-    public int itemGambar;
+    public String itemThumbnail;
 
     public ItemData() {
     }
@@ -24,5 +24,11 @@ public class ItemData {
         this.itemAsl = itemAsl;
     }
 
+    public String  getItemThumbnail(){
+        return itemThumbnail;
+    }
 
+    public void setItemThumbnail(String itemThumbnail) {
+        this.itemThumbnail = itemThumbnail;
+    }
 }

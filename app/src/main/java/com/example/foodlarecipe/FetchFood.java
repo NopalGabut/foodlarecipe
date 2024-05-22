@@ -70,16 +70,16 @@ public class FetchFood extends AsyncTask<String,Void,String> {
         try {
             JSONObject jsonObject = new JSONObject(s);
             JSONArray mealsArray = jsonObject.getJSONArray("meals");
-            String name, asl;
+            String name, asl, thumbnail;
             for (int i = 0; i < mealsArray.length(); i++) {
                 JSONObject meal = mealsArray.getJSONObject(i);
                 name = meal.getString("strMeal");
                 asl = meal.getString("strArea");
-//                thumbnail = meal.getString("strMealThumb");
+                thumbnail = meal.getString("strMealThumb");
                 ItemData itemData = new ItemData();
                 itemData.itemName = name;
                 itemData.itemAsl = asl;
-//                itemData.itemThumbnail = thumbnail;
+                itemData.itemThumbnail = thumbnail;
                 values.add(itemData);
             }
         } catch (JSONException e) {
