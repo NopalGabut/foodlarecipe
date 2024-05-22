@@ -14,7 +14,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.food.FetchFood;
+import com.example.foodlarecipe.FetchFood;
 
 import java.util.ArrayList;
 import java.util.Calendar;
