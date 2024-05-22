@@ -1,5 +1,4 @@
-package com.example.foodlarecipe.;
-
+package com.example.foodlarecipe;
 import android.content.Context;
 import android.net.Uri;
 import android.os.AsyncTask;
